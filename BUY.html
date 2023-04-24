@@ -1,0 +1,193 @@
+<head>
+    <title>Home Page</title>
+    <style>
+      body {
+       width: 100%;
+       height: 500px;
+       background-position: center;
+       background-size: cover;
+       background-image: url('img.9.jpg');
+      }
+      #taskbar {
+        background-color: green;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+      #taskbar a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        margin-right: 10px;
+        font-size: 20px;
+      }
+      #taskbar a:hover {
+        text-decoration: underline;
+      }
+      #options-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .option {
+        background-color: lightgreen;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .option:hover {
+        background-color: white;
+      }
+      .option a {
+        color: #005500;
+        font-size: 24px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="taskbar">
+        <h1>Book.Buy.Borrow</h1>
+        <div>
+          <a href="browse.html">Browse Books</a>
+          <a href="chat.html">Chat</a>
+          <a href="buy.html">Buy Books</a>
+          <a href="home.html">Home</a>
+        </div>
+    </div>
+  </body>
+  <main>
+    <style>
+        main {
+  padding: 6em;
+  background-color: #f5f5f5;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+}
+
+.book {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+}
+
+.book img {
+  width: 100%;
+}
+
+.book-details h3 {
+  margin-top: 0;
+}
+
+.book-details p:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+
+.book-details button {
+  display: block;
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  background-color: lightgreen;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-details button:hover {
+  background-color: #005500;
+}
+    </style>
+    <h2>Buy Books</h2>
+    <div class="filter-sort">
+      <form>
+        <label for="filter">Filter:</label>
+        <select id="filter">
+          <option value="all">All</option>
+          <option value="fiction">Fiction</option>
+          <option value="non-fiction">Non-Fiction</option>
+          <option value="biography">Biography</option>
+        </select>
+        <label for="sort">Sort:</label>
+        <select id="sort">
+          <option value="price-low">Price (Low to High)</option>
+          <option value="price-high">Price (High to Low)</option>
+          <option value="name-asc">Name (A to Z)</option>
+          <option value="name-desc">Name (Z to A)</option>
+        </select>
+        <button>Apply</button>
+      </form>
+    </div>
+    <div class="book-list">
+      <div class="book">
+        <img src="book1.jpg" alt="Book 1">
+        <div class="book-details">
+          <h3>The Great Gatsby</h3>
+          <p>by F. Scott Fitzgerald</p>
+          <p>Price: &#8377;499</p>
+          <button>Buy Now</button>
+        </div>
+      </div>
+      <div class="book">
+        <img src="book2.jpg" alt="Book 2">
+        <div class="book-details">
+          <h3>To Kill a Mockingbird</h3>
+          <p>by Harper Lee</p>
+          <p>Price: &#8377;599</p>
+          <button>Buy Now</button>
+        </div>
+      </div>
+      <div class="book">
+        <img src="book3.jpg" alt="Book 3">
+        <div class="book-details">
+          <h3>The Catcher in the Rye</h3>
+          <p>by J.D. Salinger</p>
+          <p>Price: &#8377;399</p>
+          <button>Buy Now</button>
+        </div>
+      </div>
+      <div class="book">
+        <img src="book4.jpg" alt="Book 4">
+        <div class="book-details">
+          <h3>1984</h3>
+          <p>by George Orwell</p>
+          <p>Price: &#8377;349</p>
+          <button>Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="pagination">
+      <a href="#" class="previous">&laquo; Previous</a>
+      <a href="#" class="page-number">1</a>
+      <a href="#" class="page-number">2</a>
+      <a href="#" class="page-number">3</a>
+      <a href="#" class="page-number">4</a>
+      <a href="#" class="page-number">5</a>
+      <a href="#" class="next">Next &raquo;</a>
+    </div>
+    <style>
+        .pagination {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+    </style>
+  </main>
+  
