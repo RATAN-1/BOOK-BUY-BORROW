@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Browse Books</title>
+    <style>
+      body {
+      width: 100%;
+      height: 500px;
+      background-position: center;
+      background-size: cover;
+      background-image: url('img.6.jpg')
+      }
+      #taskbar {
+        background-color: #005500;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+      #taskbar a {
+        color: white;
+        text-decoration: none;
+        margin-right: 10px;
+        font-size: 20px;
+      }
+      #taskbar a:hover {
+        text-decoration: underline;
+      }
+      #books-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .book {
+        background-color: white;
+        border: 2px solid #005500;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+        width: 200px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+      }
+      .book:hover {
+        background-color: #005500;
+        color: white;
+      }
+      .book a {
+        color: #005500;
+        font-size: 24px;
+        text-decoration: none;
+        margin-bottom: 10px;
+      }
+      .book p {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      .book:hover p {
+        color: white;
+      }
+      .book-details {
+        display: none;
+        font-size: 14px;
+        color: white;
+        text-align: left;
+      }
+      .book:hover .book-details {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="taskbar">
+      <h1>Book.Buy.Borrow</h1>
+      <div>
+        <a href="browse.html">Browse Books</a>
+        <a href="chat.html">Chat</a>
+        <a href="buy.html">Buy Books</a>
+        <a href="home.html">Home</a>
+      </div>
+    </div>
+    <h1>Book.Buy.Borrow</h1>
+    <div id="books-container">
+      <div class="book">
+        <a href="#">Book 1</a>
+        <p>Author: Author 1</p>
+        <div class="book-details">
+          <p>Details: This is Book 1, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam ante ac gravida tincidunt. Donec sed libero id mi dictum consequat. Sed bibendum suscipit ultricies.</p>
+        </div>
+      </div>
+      <div class="book">
+        <a href="#">Book 2</a>
+        <p>Author: Author 2</p>
+        <div class="book-details">
+          <p>Details: This is Book 2, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam ante ac gravida tincidunt. Donec sed libero id mi dictum consequat. Sed bibendum suscipit ultricies.</p>
+        </div>
+      </div>
+      <div class="book">
+        <a href="#">Book 3</a>
+        <p>Author: Author 3</p>
+        <div class="book-details">
+          <p>Details: This is Book 3, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam ante ac gravida tincidunt. Donec sed libero id mi dictum consequat. Sed bibbendum suscipit ultricies.</p>
+        </div>
+      </div>
+      <div id="books-container">
+        <div class="book">
+          <a href="#">Book 4</a>
+          <p>Author: Author 4</p>
+          <div class="book-details">
+            <p>Details: This is Book 4, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam ante ac gravida tincidunt. Donec sed libero id mi dictum consequat. Sed bibendum suscipit ultricies.</p>
+          </div>
+        </div>
+        <div id="books-container">
+      <div class="book">
+        <a href="#">Book 5</a>
+        <p>Author: Author 5</p>
+        <div class="book-details">
+          <p>Details: This is Book 5, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam ante ac gravida tincidunt. Donec sed libero id mi dictum consequat. Sed bibendum suscipit ultricies.</p>
+        </div>
+      </div>
+      <div id="books-container">
+        <div class="book">
+          <a href="#">Book 6</a>
+          <p>Author: Author 6</p>
+          <div class="book-details">
+            <p>Details: This is Book 6, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam ante ac gravida tincidunt. Donec sed libero id mi dictum consequat. Sed bibendum suscipit ultricies.</p>
+          </div>
+        </div>
