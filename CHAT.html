@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Chat - Book.Buy.Borrow</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <style>
+        body {
+        width: 100%;
+        height: 500px;
+        background-position: center;
+        background-size: cover;
+        background-image: url('img.5.jpg');
+      }
+      #taskbar {
+        background-color: #005500;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+      #taskbar a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        margin-right: 10px;
+        font-size: 20px;
+      }
+      #taskbar a:hover {
+        text-decoration: underline;
+      }
+      #options-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .option {
+        background-color: lightgreen;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .option:hover {
+        background-color: white;
+      }
+      .option a {
+        color: #005500;
+        font-size: 24px;
+        text-decoration: none;
+      }
+    </style>
+    <header>
+        <div id="taskbar">
+            <h1>Book.Buy.Borrow</h1>
+            <div>
+              <a href="browse.html">Browse Books</a>
+              <a href="chat.html">Chat</a>
+              <a href="buy.html">Buy Books</a>
+              <a href="home.html">Home</a>
+            </div>
+          </div>
+    </header>
+    
+    <main>
+      <h2>Chat with Users</h2>
+      <div class="user-profiles">
+        <div class="user-profile">
+          <img src="user1.jpg" alt="User 1 Profile">
+          <h3>User 1</h3>
+          <button>Chat Now</button>
+        </div>
+        <div class="user-profile">
+          <img src="user2.jpg" alt="User 2 Profile">
+          <h3>User 2</h3>
+          <button>Chat Now</button>
+        </div>
+        <div class="user-profile">
+          <img src="user3.jpg" alt="User 3 Profile">
+          <h3>User 3</h3>
+          <button>Chat Now</button>
+        </div>
+      </div>
+    </main>
+    <style>
+        main {
+    padding: 20px;
+  }
+  
+  .user-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .user-profile {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .user-profile img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .user-profile h3 {
+    margin: 0;
+  }
+  
+  .user-profile button {
+    background-color: #1b4332;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .user-profile button:hover {
+    background-color: #4a9364;
+  }
+  
+    </style>
+    <footer>
+      <p>&copy; 2023 Book.Buy.Borrow</p>
+    </footer>
+  </body>
+</html>
